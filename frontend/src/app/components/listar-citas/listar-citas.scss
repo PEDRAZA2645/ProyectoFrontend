@@ -1,0 +1,70 @@
+h2 {
+  color: black;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  background: linear-gradient(to bottom, #a0c8f0 , #f5d0cb  );
+
+
+  table {
+    th {
+    background: linear-gradient(to right, #d8b4f8, #fbc4ab);
+
+
+      color: black;
+      text-align: center;
+    }
+
+    td {
+      text-align: center;
+      vertical-align: middle;
+
+      button {
+        margin-right: 5px;
+        border: none;
+        border-radius: 5px;
+        padding: 5px 10px;
+        font-size: 0.9rem;
+
+        &.btn-info {
+          background-color: #17a2b8;
+          color: white;
+
+          &:hover {
+            background-color: #138496;
+          }
+        }
+      }
+    }
+  }
+
+  button {
+    margin-top: 20px;
+    background-color: #007bff;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+
+    &:hover {
+      background-color: #0056b3;
+    }
+  }
+}
+
+class{
+  background: linear-gradient(to bottom, #f8faff, #eef2fb);
+}
+
+.modal-content {
+  background: linear-gradient(to right,  #fbc4ab, #d8b4f8);
+}
+
+
+.modal-header {
+  background: linear-gradient(to right, #c29bdc,#90b3f2);
+}
