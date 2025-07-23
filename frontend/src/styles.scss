@@ -1,0 +1,36 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: black;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  
+}
+
+button {
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.btn-primary {
+  background: linear-gradient(to right, #d4a5ff, #89c7ff);
+  color: black;
+
+&:hover {
+  background: linear-gradient(to right, #b887e6, #66aef0);
+}
+}

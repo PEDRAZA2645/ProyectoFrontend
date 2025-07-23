@@ -1,0 +1,12 @@
+<!-- <h2 class="mt-3 fw-bold">Detalle de la Cita</h2> -->
+<div class="container" *ngIf="cita">
+  <p><strong>Nombre:</strong> {{ cita.nombre }}</p>
+  <p><strong>Correo:</strong> {{ cita.correo }}</p>
+  <p><strong>Fecha:</strong> {{ cita.fecha | date: 'yyyy-MM-dd' }}</p>
+  <p><strong>Hora:</strong> {{ cita.hora }}</p>
+  <p><strong>Descripción:</strong> {{ cita.descripcion || 'Sin descripción' }}</p>
+
+  <a routerLink="/listar-citas">
+    <button class="btn btn-primary fw-bold" (click)="cerrarModal()">Volver</button>
+  </a>
+</div>
