@@ -1,4 +1,4 @@
-<h2 class="mt-3 fw-bold">{{ esModal ? 'Editar Cita' : 'Agendar Nueva Cita' }}</h2>
+<h2 class="mt-3 fw-bold">{{ esModal ? ' ' : 'Agendar Nueva Cita' }}</h2>
 <form [formGroup]="form" (ngSubmit)="esModal ? actualizar() : agendar()" class="container mt-3">
   <div class="mb-3">
     <label>Nombre:</label>
@@ -28,7 +28,7 @@
     <label>Descripción:</label>
     <textarea class="form-control" formControlName="descripcion"></textarea>
   </div>
-  
+
   <button type="submit" class="btn btn-primary fw-bold" [disabled]="form.invalid">
     {{ esModal ? 'Guardar Cambios' : 'Guardar Cita' }}
   </button>
